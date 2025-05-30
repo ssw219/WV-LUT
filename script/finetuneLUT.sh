@@ -1,0 +1,14 @@
+python finetuneLUT.py \
+  --batchSize 2 \
+  --cropSize 256 \
+  --expDir ../models/WVLUT_shared \
+  --nf 64 \
+  --totalIter 160000 \
+  --displayStep 50 \
+  --valStep 200 \
+  --saveStep 1000 \
+  --startIter 150000 \
+  --lr0 1e-4 \
+  --lr1 1e-6 \
+  --trainDir ../data/LOL_v1 \
+  --valDataset LOL_v1_val

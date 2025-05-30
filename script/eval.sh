@@ -1,0 +1,11 @@
+python eval.py \
+  --testDir ../data/LowLightBenchmark \
+  --expDir ../models/WVLUT_shared \
+  --resultRoot ../eval/results \
+  --model WVLUT \
+  --model_type shared \
+  --nf 64 \
+  --loadIter 150000 \
+  --valDataset LOL_v1_val \
+  --ifsave true \
+  --ifGT false
